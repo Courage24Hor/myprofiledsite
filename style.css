@@ -439,4 +439,9 @@ footer {
     .project-card ul {
         text-align: left; 
     }
+
+    #home {
+        padding-top: 120px; 
+    }
 }
+
