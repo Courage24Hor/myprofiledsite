@@ -203,9 +203,18 @@ nav{
 }
 
 .btn-secondary:hover {
-    background: var(--primary);
-    color: #fff;
-    transform: translateY(-3px);
+    display: inline-block;
+    padding: 14px 28px;
+    background: #3498db;          
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin-top: 20px;
 }
 
 .home-image {
@@ -441,7 +450,6 @@ footer {
     }
 
     #home {
-        padding-top: 120px; 
+        padding-top: 120px;
     }
 }
-
