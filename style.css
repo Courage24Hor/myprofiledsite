@@ -90,11 +90,11 @@ nav{
 .logo {
     font-weight: 700;
     font-size: 1.5rem;
-    color: var(--primary);
+    color: navy;
 }
 
 .logo span{
-    color: var(--secondary);
+    color: gold;
 }
 
 .nav-links {
@@ -157,6 +157,11 @@ nav{
 
 .home-text .highlight {
     color: var(--primary);
+}
+
+.home-text .highlight:hover {
+    color: var(--secondary);
+    cursor: pointer;
 }
 
 .home-text p {
@@ -254,6 +259,11 @@ nav{
     color: var(--dark);
 }
 
+.about-text h3:hover {
+    color: #1a5f7a;
+    cursor: pointer;
+}
+
 .about-text p {
     font-size: 1.1rem;
     color: var(--gray);
@@ -349,12 +359,12 @@ footer {
 .projects {
     background: white; 
     padding: 5rem 0;
+    text-align: center;
 }
-
 
 .project-card {
     background: #fff;
-    padding: 1.5rem;
+    padding: 25px;
     border-radius: var(--border-radius);
     box-shadow: var(--shadow-md);
     margin-bottom: 3rem; 
@@ -383,10 +393,23 @@ footer {
     color: var(--dark);
 }
 
+.project-card h3:hover {
+    color: #1a5f7a;
+    cursor: pointer;
+}
+
 .project-card p {
     font-size: 1.05rem;
     color: var(--gray);
     margin-bottom: 0.75rem;
+}
+
+.projects-content {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 
 .tech-list {
@@ -394,12 +417,12 @@ footer {
     margin-top: 0.5rem;
     margin-bottom: 1rem;
     padding-left: 1.2rem;
+    width: fit-content;
 }
 
 .tech-list li {
     font-size: 1rem;
     margin-bottom: 0.25rem;
-
 }
 
 @media (max-width: 768px) {
@@ -410,10 +433,10 @@ footer {
 
     .project-card {
         text-align: center;
+        padding: 20px;
     }
 
     .project-card ul {
         text-align: left; 
     }
 }
-
