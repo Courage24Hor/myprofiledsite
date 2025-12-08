@@ -26,6 +26,8 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
 
+                <div class="clock" id="clock">00:00:00</div>
+
                 <!-- Dark Mode Button Goes Here -->
                 <div class="theme-toggle">
                     <i class="fas fa-moon" id="themeButton"></i>
@@ -60,7 +62,7 @@
             </div>
         </div>
     </section>
-    <section id="about" class="about">
+    <section id="about" class="about fade-in">
         <div class="container">
             <h2 class="section-title fade-in">About Me</h2>
             <div class="about-content">
@@ -100,10 +102,6 @@
                         <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
                     </div>
                     <div class="skill-item">
-                        <div class="skill-name">C++ Console Applications <span>80%</span></div>
-                        <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
-                    </div>
-                    <div class="skill-item">
                         <div class="skill-name">JavaScript <span>70%</span></div>
                         <div class="skill-bar"><div class="skill-progress" style="width: 70%"></div></div>
                     </div>
@@ -119,10 +117,15 @@
                         <div class="skill-name">AI <span>70%</span></div>
                         <div class="skill-bar"><div class="skill-progress" style="width: 70%"></div></div>
                     </div>
+                    <div class="skill-item">
+                        <div class="skill-name">SQLite <span>70%</span></div>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 70%"></div></div>
+                    </div>
                      <div class="skill-item">
-                        <div class="skill-name">SQL <span>50%</span></div>
+                        <div class="skill-name">SQL <span>60%</span></div>
                         <div class="skill-bar"><div class="skill-progress" style="width: 60%"></div></div>
                     </div>
+                
                      <div class="skill-item">
                         <div class="skill-name">Statistical Learning <span>40%</span></div>
                         <div class="skill-bar"><div class="skill-progress" style="width: 40%"></div></div>
@@ -139,11 +142,11 @@
         </div>
     </section>
     <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <h2 class="section-title">Projects</h2>
-        <div class="projects-content">
+    <section id="projects" class="projects fade-in">
+        <h2 class="section-title fade-in">Projects</h2>
+        <div class="projects-content container">
             <!-- Project 1 -->
-            <div class="project-card" id="project1">
+            <div class="project-card fade-in" id="project1">
                 <img src="coffee.jpg" alt="Coffee Data Analysis Project">
                 <h3>Coffee Consumption & Spending Analysis</h3>
                 <p>A full data-analysis project exploring coffee consumption patterns across demographics. 
@@ -161,7 +164,7 @@
             </div>
 
             <!-- Project 2 -->
-            <div class="project-card" id="project2">
+            <div class="project-card fade-in" id="project2">
                 <img src="survey.jpg" alt="Survey Form Debugging Project">
                 <h3>Youth Survey Form Debugging & Data Handling</h3>
                 <p>Fixed a broken data-submission flow on a youth survey form by restructuring the JavaScript, 
@@ -178,11 +181,11 @@
         </div>
     </section>
     <div class="container">
-        <section id="contact" class="contact">
-            <div class="contact-content">
+        <section id="contact" class="contact fade-in">
+            <div class="container contact-content">
                 <div class="contact-text fade-in">
                     <h3 class="section-title fade-in">Contact Me</h3>
-                    <p>If you'd like to get in touch, feel free to reach out via email or connect with me on social media.</p>
+                    <p class="fade-in">If you'd like to get in touch, feel free to reach out via email or connect with me on social media.</p>
                     <ul>
                         <li>Email: 
                             <a href="mailto:hormenumawuli@gmail.com">hormenumawuli@gmail.com</a>
@@ -198,11 +201,10 @@
             </div>      
         </section>
     </div>
-    <footer>
+    <footer class="fade-in">
         <p>&copy; 2025 Courage Hormenu. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
 </body>
 </html>
-
