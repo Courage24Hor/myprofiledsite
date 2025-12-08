@@ -129,6 +129,16 @@ nav{
     color: var(--dark);
 }
 
+.clock {
+    font-size: 1.2rem;
+    color: #31b975;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
 .home {
     min-height: 100vh;
     display: flex;
@@ -524,4 +534,16 @@ body.dark-mode .project-card {
 
 body.dark-mode .mobile-toggle {
     color: var(--dark);
+}
+
+/* === SCROLL ANIMATIONS === */
+.fade-in {
+    opacity: 0;
+    transform: translateY(25px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
