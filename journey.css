@@ -181,3 +181,15 @@ article section:nth-child(4) { animation-delay: 0.8s; }
     h4 { font-size: 1.1rem; }
     p, ul { font-size: 0.9rem; }
 }
+
+/* === SCROLL ANIMATIONS === */
+.fade-in {
+    opacity: 0;
+    transform: translateY(25px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
