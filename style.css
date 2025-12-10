@@ -456,8 +456,23 @@ footer {
         text-align: left; 
     }
 
+    .clock {
+        font-size: 0.95rem;
+        padding: 15px 30px;
+        min-width: 140px;
+    }
+
     #home {
         padding-top: 120px;
+    }
+}
+
+/* Small devices / phones */
+@media (max-width: 480px) {
+    .clock {
+        font-size: 0.85rem;
+        padding: 10px 20px;
+        min-width: 120px;
     }
 }
 
@@ -547,3 +562,4 @@ body.dark-mode .mobile-toggle {
     opacity: 1;
     transform: translateY(0);
 }
+
