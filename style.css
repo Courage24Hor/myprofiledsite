@@ -496,6 +496,10 @@ footer {
     #home {
         padding-top: 120px;
     }
+    /* === FIX: Marquee spacing so header doesn't cover it === */
+    .welcome-message {
+        margin-top: 160px; /* pushes marquee below header */
+    }
 }
 
 /* Small devices / phones */
@@ -521,6 +525,11 @@ footer {
     .home, 
     .contact {
         padding-top: 160px;
+    }
+
+    /* === FIX: Marquee spacing for small phones === */
+    .welcome-message {
+        margin-top: 180px; /* extra spacing for small phones */
     }
 }
 
@@ -649,3 +658,4 @@ body.dark-mode .mobile-toggle {
     padding: 0.9rem 2.5rem;
     font-size: 1rem;
 }
+
