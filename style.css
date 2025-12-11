@@ -639,7 +639,7 @@ body.dark-mode .mobile-toggle {
 }
 
 #quote-text {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Inter', sans-serif;
     font-size: 1.5rem;
     line-height: 1.6;
     color: var(--dark);
@@ -658,4 +658,5 @@ body.dark-mode .mobile-toggle {
     padding: 0.9rem 2.5rem;
     font-size: 1rem;
 }
+
 
