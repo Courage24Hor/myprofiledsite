@@ -40,22 +40,30 @@ body {
     overflow-x: hidden;
 }
 
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem; /* Adds consistent spacing between logo, nav links, and right-side items */
+    padding: 0 1rem; /* Keeps content aligned with container padding */
+}
+
 /* Containers */
 .container {
     width: 90%;
     max-width: 900px;
     margin: 0 auto;
-    padding: 40px 0;
+    padding: 0 1rem;
 }
 
 /* Header */
 header {
     background-color: var(--bg);
-    position: sticky;
+    position:sticky;
     top: 0;
     width: 100%;
     z-index: 1000;
-    padding: 10px 0;
+    padding: 0.5rem 0;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
@@ -100,6 +108,19 @@ button {
 .clock-hold {
     margin-top: 10px;
     width: 50%;
+}
+
+.theme-toggle {
+    font-size: 1.4rem;
+    cursor: pointer;
+    color: var(--dark);
+    margin-left: 1.5rem;
+    transition: var(--transition);
+    flex-shrink: 0; /* Prevent icon from collapsing */
+}
+
+.theme-toggle:hover {
+    transform: scale(1.2);
 }
 
 .download-btn {
@@ -225,21 +246,6 @@ article section:nth-child(4) { animation-delay: 0.8s; }
     h3 { font-size: 1.4rem; }
     h4 { font-size: 1.2rem; }
     p, ul { font-size: 0.95rem; }
-
-    /* CLOCK FIX */
-    .clock {
-        font-size: 1rem;
-        padding: 12px 20px;
-        width: 60%;
-        max-width: 95%;
-        box-sizing: border-box;
-        text-align: center;
-    }
-
-    /* Push content below sticky header */
-    main {
-        padding-top: 120px !important;
-    }
 }
 
 @media (max-width: 480px) {
@@ -248,19 +254,6 @@ article section:nth-child(4) { animation-delay: 0.8s; }
     h3 { font-size: 1.2rem; }
     h4 { font-size: 1.1rem; }
     p, ul { font-size: 0.9rem; }
-
-    /* CLOCK FIX */
-    .clock {
-        font-size: 0.9rem;
-        padding: 10px 15px;
-        width: 80%;
-        max-width: 95%;
-    }
-
-    /* Push content below sticky header */
-    main {
-        padding-top: 140px !important;
-    }
 }
 
 /* === SCROLL ANIMATIONS === */
